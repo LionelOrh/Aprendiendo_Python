@@ -56,3 +56,14 @@ animales = ['🐶', '🐱', '🐰', '🐹','🐶']
 print(len(animales))  # Longitud de la lista
 print(animales.count('🐶'))  # Contar cuántas veces aparece un elemento
 print('🐱' in animales)  # Verificar si un elemento está en la lista
+
+
+print("\nOrdenar una lista de cadenas de texto (todo en minúsculas)")
+cadenas = ['manzanas', 'pera', 'limón', 'manzana', 'naranja']
+sorted_frutas = sorted(cadenas)  # Crear una nueva lista ordenada
+print("Lista después de sorted():", sorted_frutas)
+
+print("\nOrdenar una lista de cadenas de texto (mezclas de mayúsculas y minúsculas)")
+cadenas = ['manzanas', 'Pera', 'limón', 'manzana', 'naranja', 'BANANA']
+cadenas.sort(key=str.lower)
+print("Lista después de sort():", cadenas)
